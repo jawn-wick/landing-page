@@ -1,3 +1,15 @@
+body {
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 80rem;
+}
+
 .header {
     background: #1f2937;
     display: flex;
@@ -11,7 +23,7 @@
     font-weight: bold;
 }
 
-.links {
+.links ,.hero-text {
     color: #e5e7eb;
     font-size: 18px;
 }
@@ -30,7 +42,48 @@ ul {
     
 }
 
-.left-header, .right-header {
+.hero {
+    background: #1f2937;
     display: flex;
+    gap: 16px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+}
 
+.hero-header {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+button {
+    background: #3882fc;
+    border: none;
+    border-radius: 8px;
+    color: #f9faf8;
+    font-size: 18px;
+    padding: 8px 28px;
+    margin: 16px 0px;
+}
+
+.placeholder {
+    width: 520px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+}
+
+.right-hero {
+    align-items: center;
+    justify-content: center;
 }
